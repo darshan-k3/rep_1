@@ -8,7 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>DK-NavBarTut</title>
+<!--
+    This website was adapted from "Responsive Navigation Bar Tutorial | HTML CSS JAVASCRIPT"
+    tutorial by Dev Ed.
+-->
     
 </head>
 <body>
@@ -45,7 +50,52 @@ Donec a metus odio. Praesent quis nisl et lectus tempor gravida vel eu ex. Nunc 
 Mauris a tempor metus, ac fermentum augue. Fusce diam leo, vehicula in bibendum sed, aliquet sit amet nunc. Etiam pellentesque efficitur justo vitae congue. Curabitur a enim eu tortor aliquet lobortis quis finibus ligula. Nam tincidunt elementum cursus. Aliquam dapibus sem nec elit rutrum congue. Sed sit amet vehicula orci. Sed consequat placerat turpis ac lobortis. Fusce ut purus lorem. Nullam consectetur lobortis lorem at rhoncus. In sit amet gravida tortor, eget tempor risus. Quisque interdum scelerisque enim quis volutpat. Aenean placerat lectus enim, et pellentesque eros facilisis sit amet.
 
 In pretium finibus magna in pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce at urna at enim vulputate sollicitudin quis nec eros. Donec malesuada malesuada augue nec pellentesque. Phasellus ac mollis diam. Fusce semper nisi ut leo accumsan, vel semper enim congue.
-    </p>
-    <script src="app.js"></script>
+</p>
+<div class="container">
+    <form name="contact" method="POST" data-netlify="true">
+        <div class="row">
+            <div class="col-25">
+                <label for="name">Name</label>
+                <i class="material-icons prefix">account_circle</i>
+            </div>  
+            <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Your name...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="phone">Phone</label>
+                <i class="material-icons prefix">phone</i>
+            </div>  
+            <div class="col-75">
+                <input type="text" id="phone" name="phone" placeholder="Your phone number...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email</label>
+                <i class="material-icons prefix">email</i>
+            </div>  
+            <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Your email..." pattern=".+@.+.com">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-25">
+                <label for="message">Message</label>
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon_prefix2" class="materialize-textarea" placeholder="Message"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</div>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

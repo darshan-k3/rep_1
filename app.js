@@ -34,12 +34,18 @@ h1tag.addEventListener("mouseenter", function( event ) {
   }, 500);
 }, false);
 
-h1tag.addEventListener("mouseover", function(event){
-    event.target.style.color = "red";
+// h1tag.addEventListener("mouseover", function(event){
+//     event.target.style.color = "red";
 
+//     setTimeout(function(){
+//         event.target.style.color = "";
+//     }, 500);
+// }, false);
+
+let submitButton = document.getElementById("submit");
+submitButton.addEventListener("mouseenter", function(event) {
+    event.target.style.color = "#0eff00";
     setTimeout(function(){
         event.target.style.color = "";
     }, 500);
 }, false);
-
-
